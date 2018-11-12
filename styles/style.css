@@ -11,7 +11,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Karla", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -47,13 +47,13 @@ body {
 }
 
 a {
-  color: #F95959;
+  color: #0984E3;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #F95959;
+  color: #0984E3;
   outline: none;
   text-decoration: none;
 }
@@ -64,24 +64,24 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Karla", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
 
 ::-webkit-selection {
   color: #fff;
-  background: #F95959;
+  background: #0984E3;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #F95959;
+  background: #0984E3;
 }
 
 ::selection {
   color: #fff;
-  background: #F95959;
+  background: #0984E3;
 }
 
 .fh5co-nav .top-menu {
@@ -94,10 +94,10 @@ h1, h2, h3, h4, h5, h6, figure {
   text-transform: uppercase;
   font-weight: bold;
   font-weight: 700;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Karla", Arial, sans-serif;
 }
 .fh5co-nav #fh5co-logo a span {
-  color: #F95959;
+  color: #0984E3;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -194,7 +194,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .fh5co-nav ul li.btn-cta a span {
-  background: #f95959;
+  background: #0984E3;
   padding: 4px 10px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -224,7 +224,7 @@ h1, h2, h3, h4, h5, h6, figure {
   content: '';
   width: 20px;
   height: 2px;
-  background: #F95959;
+  background: #0984E3;
   margin: 0 auto;
 }
 
@@ -390,7 +390,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 18px;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
-  background: #F95959 !important;
+  background: #0984E3 !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
@@ -464,7 +464,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 80px;
   height: 80px;
   font-size: 28px;
-  color: #F95959;
+  color: #0984E3;
   background: #fff;
   -webkit-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.13);
   -moz-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.13);
@@ -483,7 +483,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 40px;
   display: block;
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Karla", Arial, sans-serif;
   width: 100%;
   font-weight: 400;
   margin-bottom: .3em;
@@ -568,7 +568,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .services .icon {
   width: 90px;
   height: 90px;
-  background: #F95959;
+  background: #0984E3;
   display: table;
   text-align: center;
   margin: -75px auto 0 auto;
@@ -610,7 +610,7 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.13);
 }
 .services:hover h3 a, .services:focus h3 a {
-  color: #F95959;
+  color: #0984E3;
 }
 
 .fh5co-social-icons {
@@ -631,7 +631,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #F95959;
+  color: #0984E3;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -650,7 +650,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .fh5co-contact-info ul li:before {
-  color: #F95959;
+  color: #0984E3;
   position: absolute;
   left: 0;
   top: .05em;
@@ -939,7 +939,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #F95959;
+  background: #0984E3;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -999,7 +999,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: rgba(0, 0, 0, 0.3);
 }
 .fh5co-blog .blog-text span.comment a i {
-  color: #F95959;
+  color: #0984E3;
   padding-left: 7px;
 }
 .fh5co-blog .blog-text h3 {
@@ -1307,7 +1307,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Karla", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 30px;
@@ -1331,9 +1331,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #F95959;
+  background: #0984E3;
   color: #fff;
-  border: 2px solid #F95959;
+  border: 2px solid #0984E3;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #fa7272 !important;
@@ -1341,11 +1341,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #F95959;
-  border: 2px solid #F95959;
+  color: #0984E3;
+  border: 2px solid #0984E3;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #F95959;
+  background: #0984E3;
   color: #fff;
 }
 
@@ -1475,7 +1475,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #F95959;
+  border-color: #0984E3;
 }
 
 .row-pb-md {
