@@ -46,10 +46,7 @@
       <div class="social-wrapper">
         <div class="social-actions">
           <h5 class="my-2">Help us Grow</h5>
-          <div class="inner-wrapper">
-            <a class="github-button" href="https://github.com/DesignRevision/shards-dashboard" data-icon="octicon-star" data-show-count="true" aria-label="Star DesignRevision/shards-dashboard on GitHub">Star</a>
-            <!-- <iframe style="width: 91px; height: 21px;"src="https://yvoschaap.com/producthunt/counter.html#href=https%3A%2F%2Fwww.producthunt.com%2Fr%2Fp%2F112998&layout=wide" width="56" height="65" scrolling="no" frameborder="0" allowtransparency="true"></iframe> -->
-          </div>
+
         </div>
         <div id="social-share" data-url="https://designrevision.com/downloads/shards-dashboard-lite/" data-text="🔥 Check out Shards Dashboard Lite, a free and beautiful Bootstrap 4 admin dashboard template!" data-title="share"></div>
         <div class="loading-overlay">
@@ -72,7 +69,7 @@
               <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
                 <div class="d-table m-auto">
                   <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/shards-dashboards-logo.svg" alt="Shards Dashboard">
-                  <span class="d-none d-md-inline ml-1">Shards Dashboard</span>
+                  <span class="d-none d-md-inline ml-1">Spaghetti.</span>
                 </div>
               </a>
               <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
@@ -92,45 +89,21 @@
           <div class="nav-wrapper">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="dashboard.html">
+                <a class="nav-link active" href="dashboard-patient.html">
                   <i class="material-icons">edit</i>
-                  <span>Blog Dashboard</span>
+                  <span>Dashboard</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="components-blog-posts.html">
                   <i class="material-icons">vertical_split</i>
-                  <span>Blog Posts</span>
+                  <span>Medical Records</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="add-new-record.html">
                   <i class="material-icons">note_add</i>
-                  <span>Add New Record</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="form-components.html">
-                  <i class="material-icons">view_module</i>
-                  <span>Forms &amp; Components</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="tables.html">
-                  <i class="material-icons">table_chart</i>
-                  <span>Tables</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="user-profile-lite.html">
-                  <i class="material-icons">person</i>
-                  <span>User Profile</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="errors.html">
-                  <i class="material-icons">error</i>
-                  <span>Errors</span>
+                  <span>Approval</span>
                 </a>
               </li>
             </ul>
@@ -188,16 +161,14 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img class="user-avatar rounded-circle mr-2" src="images/avatars/0.jpg" alt="User Avatar">
-                    <span class="d-none d-md-inline-block">Sierra Brooks</span>
+                    <img class="user-avatar rounded-circle mr-2" src="images/user-2.jpg" alt="User Avatar">
+                    <span class="d-none d-md-inline-block">Terry Kwan</span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-small">
                     <a class="dropdown-item" href="user-profile-lite.html">
                       <i class="material-icons">&#xE7FD;</i> Profile</a>
                     <a class="dropdown-item" href="components-blog-posts.html">
-                      <i class="material-icons">vertical_split</i> Blog Posts</a>
-                    <a class="dropdown-item" href="add-new-record.html">
-                      <i class="material-icons">note_add</i> Add New Record</a>
+                      <i class="material-icons">vertical_split</i> Settings</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item text-danger" href="#">
                       <i class="material-icons text-danger">&#xE879;</i> Logout </a>
@@ -217,7 +188,7 @@
             <div class="page-header row no-gutters py-4">
               <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
                 <span class="text-uppercase page-subtitle">Dashboard</span>
-                <h3 class="page-title">Blog Overview</h3>
+                <h3 class="page-title">Status Overview</h3>
               </div>
             </div>
             <!-- End Page Header -->
@@ -228,7 +199,7 @@
                   <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
-                        <span class="stats-small__label text-uppercase">Posts</span>
+                        <span class="stats-small__label text-uppercase">Average HR</span>
                         <h6 class="stats-small__value count my-3">2,390</h6>
                       </div>
                       <div class="stats-small__data">
@@ -244,7 +215,7 @@
                   <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
-                        <span class="stats-small__label text-uppercase">Pages</span>
+                        <span class="stats-small__label text-uppercase">Average BP</span>
                         <h6 class="stats-small__value count my-3">182</h6>
                       </div>
                       <div class="stats-small__data">
@@ -260,7 +231,7 @@
                   <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
-                        <span class="stats-small__label text-uppercase">Comments</span>
+                        <span class="stats-small__label text-uppercase">Weight</span>
                         <h6 class="stats-small__value count my-3">8,147</h6>
                       </div>
                       <div class="stats-small__data">
