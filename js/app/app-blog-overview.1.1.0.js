@@ -126,7 +126,7 @@
       datasets: [{
         label: 'Current Month',
         fill: 'start',
-        data: [500, 800, 320, 180, 240, 320, 230, 650, 590, 1200, 750, 940, 1420, 1200, 960, 1450, 1820, 2800, 2102, 1920, 3920, 3202, 3140, 2800, 3200, 3200, 3400, 2910, 3100, 4250],
+        data: [500,800,420,280,240,320,230,350,490,800,750,540,420,400,460,450,620,800,602,720,820,702,740,800,400,300,400,710,500,450],
         backgroundColor: 'rgba(0,123,255,0.1)',
         borderColor: 'rgba(0,123,255,1)',
         pointBackgroundColor: '#ffffff',
@@ -227,14 +227,14 @@
     var ubdData = {
       datasets: [{
         hoverBorderColor: '#ffffff',
-        data: [68.3, 24.2, 7.5],
+        data: [25.0, 40.0, 35.0],
         backgroundColor: [
           'rgba(0,123,255,0.9)',
           'rgba(0,123,255,0.5)',
           'rgba(0,123,255,0.3)'
         ]
       }],
-      labels: ["Desktop", "Tablet", "Mobile"]
+      labels: ["CT Scan", "Lab Result", "Summary"]
     };
 
     // Options

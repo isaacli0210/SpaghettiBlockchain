@@ -9,14 +9,14 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="styles/shards-dashboards.1.1.0.css">
+    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="styles/shards-dashboards.1.1.0.min.css">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/extras.1.1.0.min.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body class="h-100">
     <div class="color-switcher animated">
-      <h5>Accent Color</h5>
+      <h5>Theme Color</h5>
       <ul class="accent-colors">
         <li class="accent-primary active" data-color="primary">
           <i class="material-icons">check</i>
@@ -38,17 +38,15 @@
         </li>
       </ul>
       <div class="actions mb-4">
-        <a class="mb-2 btn btn-sm btn-primary w-100 d-table mx-auto extra-action" href="https://designrevision.com/downloads/shards-dashboard-lite/">
-          <i class="material-icons">cloud</i> Download</a>
-        <a class="mb-2 btn btn-sm btn-white w-100 d-table mx-auto extra-action" href="https://designrevision.com/docs/shards-dashboard-lite">
-          <i class="material-icons">book</i> Documentation</a>
+        <a class="mb-2 btn btn-sm btn-primary w-100 d-table mx-auto extra-action" href="#">
+          <i class="material-icons">visibility</i> High Contrast</a>
+        <a class="mb-2 btn btn-sm btn-white w-100 d-table mx-auto extra-action" href="#">
+          <i class="material-icons">font_download</i> Larger Font Size</a>
       </div>
       <div class="social-wrapper">
         <div class="social-actions">
-          <h5 class="my-2">Help us Grow</h5>
-
+          <h5 class="my-2"><a style="text-decoration:none;color:white;" href="#" >Need Help?</a></h5>
         </div>
-        <div id="social-share" data-url="https://designrevision.com/downloads/shards-dashboard-lite/" data-text="🔥 Check out Shards Dashboard Lite, a free and beautiful Bootstrap 4 admin dashboard template!" data-title="share"></div>
         <div class="loading-overlay">
           <div class="spinner"></div>
         </div>
@@ -90,19 +88,19 @@
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link active" href="dashboard-patient.html">
-                  <i class="material-icons">edit</i>
+                  <i class="material-icons">dashboard</i>
                   <span>Dashboard</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="components-blog-posts.html">
-                  <i class="material-icons">vertical_split</i>
+                <a class="nav-link " href="medical-records-patient.html">
+                  <i class="material-icons">description</i>
                   <span>Medical Records</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="add-new-record.html">
-                  <i class="material-icons">note_add</i>
+                <a class="nav-link " href="approval-patient.html">
+                  <i class="material-icons">check_box</i>
                   <span>Approval</span>
                 </a>
               </li>
@@ -139,21 +137,21 @@
                         </div>
                       </div>
                       <div class="notification__content">
-                        <span class="notification__category">Analytics</span>
-                        <p>Your website’s active users count increased by
-                          <span class="text-success text-semibold">28%</span> in the last week. Great job!</p>
+                        <span class="notification__category">Health</span>
+                        <p>Your average weight decreased by
+                          <span class="text-danger text-semibold">3.8%</span> in the last week. Be careful!</p>
                       </div>
                     </a>
                     <a class="dropdown-item" href="#">
                       <div class="notification__icon-wrapper">
                         <div class="notification__icon">
-                          <i class="material-icons">&#xE8D1;</i>
+                          <i class="material-icons">&#xe32a;</i>
                         </div>
                       </div>
                       <div class="notification__content">
-                        <span class="notification__category">Sales</span>
-                        <p>Last week your store’s sales count decreased by
-                          <span class="text-danger text-semibold">5.52%</span>. It could have been worse!</p>
+                        <span class="notification__category">Approval</span>
+                        <p>Dr. James Johnson requested to view your medical records on
+                          <span class="text-danger text-semibold">27 August</span>. </p>
                       </div>
                     </a>
                     <a class="dropdown-item notification__all text-center" href="#"> View all Notifications </a>
@@ -165,12 +163,12 @@
                     <span class="d-none d-md-inline-block">Terry Kwan</span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-small">
-                    <a class="dropdown-item" href="user-profile-lite.html">
+                    <a class="dropdown-item" href="profile-patient.html">
                       <i class="material-icons">&#xE7FD;</i> Profile</a>
-                    <a class="dropdown-item" href="components-blog-posts.html">
-                      <i class="material-icons">vertical_split</i> Settings</a>
+                    <a class="dropdown-item" href="#">
+                      <i class="material-icons">build</i> Settings</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item text-danger" href="#">
+                    <a class="dropdown-item text-danger" href="index.html">
                       <i class="material-icons text-danger">&#xE879;</i> Logout </a>
                   </div>
                 </li>
@@ -188,19 +186,19 @@
             <div class="page-header row no-gutters py-4">
               <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
                 <span class="text-uppercase page-subtitle">Dashboard</span>
-                <h3 class="page-title">Status Overview</h3>
+                <h3 class="page-title">Health Status</h3>
               </div>
             </div>
             <!-- End Page Header -->
             <!-- Small Stats Blocks -->
             <div class="row">
-              <div class="col-lg col-md-6 col-sm-6 mb-4">
+              <div class="col-lg col-md-6 col-sm-6 mb-5">
                 <div class="stats-small stats-small--1 card card-small">
                   <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
                         <span class="stats-small__label text-uppercase">Average HR</span>
-                        <h6 class="stats-small__value count my-3">2,390</h6>
+                        <h6 class="stats-small__value count my-3">87</h6>
                       </div>
                       <div class="stats-small__data">
                         <span class="stats-small__percentage stats-small__percentage--increase">4.7%</span>
@@ -210,67 +208,51 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg col-md-6 col-sm-6 mb-4">
+              <div class="col-lg col-md-6 col-sm-6 mb-5">
                 <div class="stats-small stats-small--1 card card-small">
                   <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
                         <span class="stats-small__label text-uppercase">Average BP</span>
-                        <h6 class="stats-small__value count my-3">182</h6>
+                        <h6 class="stats-small__value count my-3">130/110</h6>
                       </div>
                       <div class="stats-small__data">
-                        <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                        <span class="stats-small__percentage stats-small__percentage--increase">3.4%</span>
                       </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-2"></canvas>
                   </div>
                 </div>
               </div>
-              <div class="col-lg col-md-4 col-sm-6 mb-4">
+              <div class="col-lg col-md-6 col-sm-6 mb-5">
                 <div class="stats-small stats-small--1 card card-small">
                   <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
                         <span class="stats-small__label text-uppercase">Weight</span>
-                        <h6 class="stats-small__value count my-3">8,147</h6>
+                        <h6 class="stats-small__value count my-3">60kg</h6>
                       </div>
                       <div class="stats-small__data">
-                        <span class="stats-small__percentage stats-small__percentage--decrease">3.8%</span>
+                        <span class="stats-small__percentage stats-small__percentage--increase">3.8%</span>
                       </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-3"></canvas>
                   </div>
                 </div>
               </div>
-              <div class="col-lg col-md-4 col-sm-6 mb-4">
+              <div class="col-lg col-md-6 col-sm-6 mb-5">
                 <div class="stats-small stats-small--1 card card-small">
                   <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
-                        <span class="stats-small__label text-uppercase">Users</span>
-                        <h6 class="stats-small__value count my-3">2,413</h6>
+                        <span class="stats-small__label text-uppercase">Cholesterol Ratio</span>
+                        <h6 class="stats-small__value count my-3">2.2</h6>
                       </div>
                       <div class="stats-small__data">
-                        <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                        <span class="stats-small__percentage stats-small__percentage--increase">1.4%</span>
                       </div>
                     </div>
                     <canvas height="120" class="blog-overview-stats-small-4"></canvas>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg col-md-4 col-sm-12 mb-4">
-                <div class="stats-small stats-small--1 card card-small">
-                  <div class="card-body p-0 d-flex">
-                    <div class="d-flex flex-column m-auto">
-                      <div class="stats-small__data text-center">
-                        <span class="stats-small__label text-uppercase">Subscribers</span>
-                        <h6 class="stats-small__value count my-3">17,281</h6>
-                      </div>
-                      <div class="stats-small__data">
-                        <span class="stats-small__percentage stats-small__percentage--decrease">2.4%</span>
-                      </div>
-                    </div>
-                    <canvas height="120" class="blog-overview-stats-small-5"></canvas>
                   </div>
                 </div>
               </div>
@@ -281,7 +263,7 @@
               <div class="col-lg-8 col-md-12 col-sm-12 mb-4">
                 <div class="card card-small">
                   <div class="card-header border-bottom">
-                    <h6 class="m-0">Users</h6>
+                    <h6 class="m-0">Health Score</h6>
                   </div>
                   <div class="card-body pt-0">
                     <div class="row border-bottom py-2 bg-light">
@@ -305,11 +287,11 @@
                 </div>
               </div>
               <!-- End Users Stats -->
-              <!-- Users By Device Stats -->
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <!-- Records by Category Stats -->
+              <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
                 <div class="card card-small h-100">
                   <div class="card-header border-bottom">
-                    <h6 class="m-0">Users by device</h6>
+                    <h6 class="m-0">Records by Category</h6>
                   </div>
                   <div class="card-body d-flex py-0">
                     <canvas height="220" class="blog-users-by-device m-auto"></canvas>
@@ -332,34 +314,11 @@
                 </div>
               </div>
               <!-- End Users By Device Stats -->
-              <!-- New Draft Component -->
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <!-- Quick Post -->
-                <div class="card card-small h-100">
-                  <div class="card-header border-bottom">
-                    <h6 class="m-0">New Draft</h6>
-                  </div>
-                  <div class="card-body d-flex flex-column">
-                    <form class="quick-post-form">
-                      <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Brave New World"> </div>
-                      <div class="form-group">
-                        <textarea class="form-control" placeholder="Words can be like X-rays if you use them properly..."></textarea>
-                      </div>
-                      <div class="form-group mb-0">
-                        <button type="submit" class="btn btn-accent">Create Draft</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <!-- End Quick Post -->
-              </div>
-              <!-- End New Draft Component -->
               <!-- Discussions Component -->
-              <div class="col-lg-5 col-md-12 col-sm-12 mb-4">
+              <div class="col-lg-9 col-md-12 col-sm-12 mb-4">
                 <div class="card card-small blog-comments">
                   <div class="card-header border-bottom">
-                    <h6 class="m-0">Discussions</h6>
+                    <h6 class="m-0">Discussions with Doctors</h6>
                   </div>
                   <div class="card-body p-0">
                     <div class="blog-comments__item d-flex p-3">
@@ -367,49 +326,31 @@
                         <img src="images/avatars/1.jpg" alt="User avatar" /> </div>
                       <div class="blog-comments__content">
                         <div class="blog-comments__meta text-muted">
-                          <a class="text-secondary" href="#">James Johnson</a> on
-                          <a class="text-secondary" href="#">Hello World!</a>
+                          <a class="text-secondary" href="#">Dr. James Johnson</a>
                           <span class="text-muted">– 3 days ago</span>
                         </div>
-                        <p class="m-0 my-1 mb-2 text-muted">Well, the way they make shows is, they make one show ...</p>
+                        <p class="m-0 my-1 mb-2 text-muted">Well, you can leave a message to me here if you still feel sick. I can ...</p>
                         <div class="blog-comments__actions">
                           <div class="btn-group btn-group-sm">
                             <button type="button" class="btn btn-white">
-                              <span class="text-success">
-                                <i class="material-icons">check</i>
-                              </span> Approve </button>
-                            <button type="button" class="btn btn-white">
-                              <span class="text-danger">
-                                <i class="material-icons">clear</i>
-                              </span> Reject </button>
-                            <button type="button" class="btn btn-white">
                               <span class="text-light">
                                 <i class="material-icons">more_vert</i>
-                              </span> Edit </button>
+                              </span> Reply </button>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="blog-comments__item d-flex p-3">
                       <div class="blog-comments__avatar mr-3">
-                        <img src="images/avatars/2.jpg" alt="User avatar" /> </div>
+                        <img src="images/user-2.jpg" alt="User avatar" /> </div>
                       <div class="blog-comments__content">
                         <div class="blog-comments__meta text-muted">
-                          <a class="text-secondary" href="#">James Johnson</a> on
-                          <a class="text-secondary" href="#">Hello World!</a>
+                          <a class="text-secondary" href="#">Terry Kwan</a>
                           <span class="text-muted">– 4 days ago</span>
                         </div>
-                        <p class="m-0 my-1 mb-2 text-muted">After the avalanche, it took us a week to climb out. Now...</p>
+                        <p class="m-0 my-1 mb-2 text-muted">Are you free tmr? If yes, I can come to visit you at 10am.</p>
                         <div class="blog-comments__actions">
                           <div class="btn-group btn-group-sm">
-                            <button type="button" class="btn btn-white">
-                              <span class="text-success">
-                                <i class="material-icons">check</i>
-                              </span> Approve </button>
-                            <button type="button" class="btn btn-white">
-                              <span class="text-danger">
-                                <i class="material-icons">clear</i>
-                              </span> Reject </button>
                             <button type="button" class="btn btn-white">
                               <span class="text-light">
                                 <i class="material-icons">more_vert</i>
@@ -420,28 +361,27 @@
                     </div>
                     <div class="blog-comments__item d-flex p-3">
                       <div class="blog-comments__avatar mr-3">
-                        <img src="images/avatars/3.jpg" alt="User avatar" /> </div>
+                        <img src="images/avatars/1.jpg" alt="User avatar" /> </div>
                       <div class="blog-comments__content">
                         <div class="blog-comments__meta text-muted">
-                          <a class="text-secondary" href="#">James Johnson</a> on
-                          <a class="text-secondary" href="#">Hello World!</a>
+                          <a class="text-secondary" href="#">Dr. James Johnson</a>
                           <span class="text-muted">– 5 days ago</span>
                         </div>
-                        <p class="m-0 my-1 mb-2 text-muted">My money's in that office, right? If she start giving me...</p>
+                        <p class="m-0 my-1 mb-2 text-muted">Do you still have headache after 7pm?</p>
                         <div class="blog-comments__actions">
                           <div class="btn-group btn-group-sm">
                             <button type="button" class="btn btn-white">
                               <span class="text-success">
                                 <i class="material-icons">check</i>
-                              </span> Approve </button>
+                              </span> Yes </button>
                             <button type="button" class="btn btn-white">
                               <span class="text-danger">
                                 <i class="material-icons">clear</i>
-                              </span> Reject </button>
+                              </span> No </button>
                             <button type="button" class="btn btn-white">
                               <span class="text-light">
                                 <i class="material-icons">more_vert</i>
-                              </span> Edit </button>
+                              </span> Reply </button>
                           </div>
                         </div>
                       </div>
@@ -450,7 +390,7 @@
                   <div class="card-footer border-top">
                     <div class="row">
                       <div class="col text-center view-report">
-                        <button type="submit" class="btn btn-white">View All Comments</button>
+                        <button type="submit" class="btn btn-white">View All</button>
                       </div>
                     </div>
                   </div>
@@ -461,41 +401,25 @@
               <div class="col-lg-3 col-md-12 col-sm-12 mb-4">
                 <div class="card card-small">
                   <div class="card-header border-bottom">
-                    <h6 class="m-0">Top Referrals</h6>
+                    <h6 class="m-0">Upcoming Appointments</h6>
                   </div>
                   <div class="card-body p-0">
                     <ul class="list-group list-group-small list-group-flush">
                       <li class="list-group-item d-flex px-3">
-                        <span class="text-semibold text-fiord-blue">GitHub</span>
-                        <span class="ml-auto text-right text-semibold text-reagent-gray">19,291</span>
+                        <span class="text-semibold text-fiord-blue">Follow Up</span>
+                        <span class="ml-auto text-right text-semibold text-reagent-gray">20 Jan 2019</span>
                       </li>
                       <li class="list-group-item d-flex px-3">
-                        <span class="text-semibold text-fiord-blue">Stack Overflow</span>
-                        <span class="ml-auto text-right text-semibold text-reagent-gray">11,201</span>
+                        <span class="text-semibold text-fiord-blue">Blood Taking</span>
+                        <span class="ml-auto text-right text-semibold text-reagent-gray">15 Apr 2019</span>
                       </li>
                       <li class="list-group-item d-flex px-3">
-                        <span class="text-semibold text-fiord-blue">Hacker News</span>
-                        <span class="ml-auto text-right text-semibold text-reagent-gray">9,291</span>
+                        <span class="text-semibold text-fiord-blue">CT Scan</span>
+                        <span class="ml-auto text-right text-semibold text-reagent-gray">15 Apr 2019</span>
                       </li>
                       <li class="list-group-item d-flex px-3">
-                        <span class="text-semibold text-fiord-blue">Reddit</span>
-                        <span class="ml-auto text-right text-semibold text-reagent-gray">8,281</span>
-                      </li>
-                      <li class="list-group-item d-flex px-3">
-                        <span class="text-semibold text-fiord-blue">The Next Web</span>
-                        <span class="ml-auto text-right text-semibold text-reagent-gray">7,128</span>
-                      </li>
-                      <li class="list-group-item d-flex px-3">
-                        <span class="text-semibold text-fiord-blue">Tech Crunch</span>
-                        <span class="ml-auto text-right text-semibold text-reagent-gray">6,218</span>
-                      </li>
-                      <li class="list-group-item d-flex px-3">
-                        <span class="text-semibold text-fiord-blue">YouTube</span>
-                        <span class="ml-auto text-right text-semibold text-reagent-gray">1,218</span>
-                      </li>
-                      <li class="list-group-item d-flex px-3">
-                        <span class="text-semibold text-fiord-blue">Adobe</span>
-                        <span class="ml-auto text-right text-semibold text-reagent-gray">827</span>
+                        <span class="text-semibold text-fiord-blue">Med Clinic</span>
+                        <span class="ml-auto text-right text-semibold text-reagent-gray">28 Apr 2019</span>
                       </li>
                     </ul>
                   </div>
@@ -503,10 +427,11 @@
                     <div class="row">
                       <div class="col">
                         <select class="custom-select custom-select-sm">
-                          <option selected>Last Week</option>
-                          <option value="1">Today</option>
-                          <option value="2">Last Month</option>
-                          <option value="3">Last Year</option>
+                          <option selected>Next Year</option>
+                          <option value="1">Next Month</option>
+                          <option value="2">Today</option>
+                          <option value="3">Last Month</option>
+                          <option value="4">Last Year</option>
                         </select>
                       </div>
                       <div class="col text-right view-report">

@@ -40,8 +40,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-family-monospace: "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  --font-family: -sans-serif: 'Karla', sans-serif;
+  }
 
 @media (max-width: 575.98px) {
   html {
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.75rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -sans-serif: 'Karla', sans-serif;
   font-weight: 400;
   color: #3D5170; }
 
@@ -171,7 +171,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  font-family: -sans-serif: 'Karla', sans-serif; }
 
 code {
   font-size: 0.75rem;
@@ -590,7 +590,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .btn {
   font-weight: 400;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -sans-serif: 'Karla', sans-serif;
   border: 1px solid transparent;
   padding: 0.5625rem 1rem;
   font-size: 0.75rem;
@@ -1676,7 +1676,7 @@ i.material-icons {
 
 .nav {
   font-size: 0.875rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  font-family: -sans-serif: 'Karla', sans-serif; }
 
 .nav-link {
   padding: 0.625rem 0.625rem;
@@ -2053,7 +2053,7 @@ i.material-icons {
   padding-bottom: 0.7rem;
   margin-right: 1.5rem;
   font-size: 0.9rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -sans-serif: 'Karla', sans-serif;
   font-weight: 400; }
 
 .navbar-text {
@@ -2194,7 +2194,7 @@ i.material-icons {
   margin-top: -1.09375rem; }
 
 .card-link {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  font-family: -sans-serif: 'Karla', sans-serif; }
   .card-link + .card-link {
     margin-left: 1.875rem; }
 
@@ -2306,7 +2306,7 @@ i.material-icons {
   padding-left: 0;
   list-style: none;
   border-radius: 0.375rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -sans-serif: 'Karla', sans-serif;
   font-size: 0.875rem; }
 
 .page-link {
@@ -2373,7 +2373,7 @@ i.material-icons {
   padding: 0.375rem 0.5rem;
   font-size: 75%;
   font-weight: 500;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -sans-serif: 'Karla', sans-serif;
   color: #fff;
   border-radius: 0.375rem; }
 
@@ -2846,7 +2846,7 @@ button.list-group-item-dark {
 .tooltip {
   z-index: 1070;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -sans-serif: 'Karla', sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: 1.5;
@@ -2908,7 +2908,7 @@ button.list-group-item-dark {
 .popover {
   z-index: 1060;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -sans-serif: 'Karla', sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: 1.5;
@@ -3657,7 +3657,7 @@ a.bg-dark:hover, a.bg-dark:focus {
   border-bottom-left-radius: 0.375rem !important; }
 
 .text-monospace {
-  font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  font-family: -sans-serif: 'Karla', sans-serif; }
 
 .font-weight-normal {
   font-weight: 300; }
@@ -4242,7 +4242,7 @@ a.text-accent:hover, a.text-accent:focus {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: -sans-serif: 'Karla', sans-serif;
     will-change: background-color, box-shadow, color;
     transition: box-shadow 200ms ease, color 200ms ease, background-color 200ms ease;
     font-size: 0.85rem; }
@@ -4403,7 +4403,7 @@ a.text-accent:hover, a.text-accent:focus {
     letter-spacing: 0.0625rem;
     color: #818EA3; }
   .stats-small__value {
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family: -sans-serif: 'Karla', sans-serif;;
     font-size: 1.5rem;
     font-weight: 500; }
   .stats-small__percentage {
