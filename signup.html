@@ -1,120 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Sign Up - Spaghetti Blockchain</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="styles/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="styles/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="styles/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="styles/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="styles/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="styles/util.css">
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<title>Sign Up - Spaghetti Blockchain</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
-<!--===============================================================================================-->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="styles/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="styles/icomoon.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="styles/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="styles/owl.carousel.min.css">
+	<link rel="stylesheet" href="styles/owl.theme.default.min.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="styles/flexslider.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="styles/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+<style type="text/css">
+	body {
+		color: #fff;
+		background: #19aa8d;
+		font-family: 'Roboto', sans-serif;
+	}
+	.form-control, .form-control:focus, .input-group-addon {
+		border-color: #e1e1e1;
+	}
+    .form-control, .btn {        
+        border-radius: 3px;
+    }
+	.signup-form {
+		width: 390px;
+		margin: 0 auto;
+		padding: 30px 0;
+	}
+    .signup-form form {
+		color: #999;
+		border-radius: 3px;
+    	margin-bottom: 15px;
+        background: #fff;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+	.signup-form h2 {
+		color: #333;
+		font-weight: bold;
+        margin-top: 0;
+    }
+    .signup-form hr {
+        margin: 0 -30px 20px;
+    }
+	.signup-form .form-group {
+		margin-bottom: 20px;
+	}
+	.signup-form label {
+		font-weight: normal;
+		font-size: 13px;
+	}
+	.signup-form .form-control {
+		min-height: 38px;
+		box-shadow: none !important;
+	}	
+	.signup-form .input-group-addon {
+		max-width: 42px;
+		text-align: center;
+	}
+	.signup-form input[type="checkbox"] {
+		margin-top: 2px;
+	}   
+    .signup-form .btn{        
+        font-size: 16px;
+        font-weight: bold;
+		background: #19aa8d;
+		border: none;
+		min-width: 140px;
+    }
+	.signup-form .btn:hover, .signup-form .btn:focus {
+		background: #179b81;
+        outline: none;
+	}
+	.signup-form a {
+		color: #fff;	
+		text-decoration: underline;
+	}
+	.signup-form a:hover {
+		text-decoration: none;
+	}
+	.signup-form form a {
+		color: #19aa8d;
+		text-decoration: none;
+	}	
+	.signup-form form a:hover {
+		text-decoration: underline;
+	}
+	.signup-form .fa {
+		font-size: 21px;
+	}
+	.signup-form .fa-paper-plane {
+		font-size: 18px;
+	}
+	.signup-form .fa-check {
+		color: #fff;
+		left: 17px;
+		top: 18px;
+		font-size: 7px;
+		position: absolute;
+	}
+</style>
 </head>
-<body style="background-color: #666666;">
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-43">
-						Login to continue
-					</span>
-					
-					
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email">
-						<span class="focus-input100"></span>
-						<span class="label-input100">Email</span>
-					</div>
-					
-					
-					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="pass">
-						<span class="focus-input100"></span>
-						<span class="label-input100">Password</span>
-					</div>
-
-					<div class="flex-sb-m w-full p-t-3 p-b-32">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Remember me
-							</label>
-						</div>
-
-						<div>
-							<a href="#" class="txt1">
-								Forgot Password?
-							</a>
-						</div>
-					</div>
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" onclick="window.location.href='dashboard-patient.html'">
-								Login
-						</button>
-					</div>
-
-					<div class="text-center p-t-46 p-b-20">
-						<span class="txt2">
-							or sign up using
-						</span>
-					</div>
-
-					<div class="login100-form-social flex-c-m">
-						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
-							<i class="fa fa-facebook-f" aria-hidden="true"></i>
-						</a>
-
-						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</a>
-					</div>
-				</form>
-
-				<div class="login100-more" style="background-image: url('images/bg-01.jpg');">
+<body>
+<nav class="fh5co-nav" role="navigation">
+	<div class="top-menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="fh5co-logo"><a href="index.html">Spaghetti<span>.</span></a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="service.html">Service Area</a></li>
+						<li><a href="about.html">About</a> </li>
+						<li><a href="contact.html">Contact</a></li>
+						<li class="btn-cta"><a href="login.html"><span>Login</span></a></li>
+						<li class="btn-cta"><a href="signup.html"><span>Sign Up</span></a></li>
+						<li><a href="#">Eng</a></li>
+						<li><a href="#">繁</a></li>
+						<li><a href="#">简</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	
-
-	
-	
-<!--===============================================================================================-->
-	<script src="js/jquery.min.js"></script>
-<!--===============================================================================================-->
-	<script src="js/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="js/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="js/moment.min.js"></script>
-	<script src="js/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="js/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/login.js"></script>
-
+</nav>
+<div class="signup-form">
+    <form action="/examples/actions/confirmation.php" method="post">
+		<h2>Sign Up</h2>
+		<p>Please fill in this form to create an account!</p>
+		<hr>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				<input type="text" class="form-control" name="username" placeholder="Username" required="required">
+			</div>
+        </div>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+				<input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+				<input type="text" class="form-control" name="password" placeholder="Password" required="required">
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon">
+					<i class="fa fa-lock"></i>
+					<i class="fa fa-check"></i>
+				</span>
+				<input type="text" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+			</div>
+        </div>
+        <div class="form-group">
+			<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+		</div>
+		<div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+        </div>
+    </form>
+	<div class="text-center">Already have an account? <a href="#">Login here</a></div>
+</div>
 </body>
-</html>
+</html>                            
