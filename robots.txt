@@ -1,6 +1,7 @@
 # robots.txt for https://cs3382.cs.cityu.edu.hk/kwokhpang4/cs3382/
 
 User-agent: *
-Disallow: /dashboard.html
+Disallow: /sass/*
+Disallow: /style/*
 
 Sitemap: https://cs3382.cs.cityu.edu.hk/kwokhpang4/cs3382/sitemap.xml
