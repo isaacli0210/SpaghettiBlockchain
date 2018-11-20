@@ -59,22 +59,24 @@ body, html {
 a {
 	font-family: "Karla", Arial, sans-serif;
 	font-size: 14px;
+	font-weight: 900;
 	line-height: 1.7;
 	color: #666666;
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
 }
 
 a:focus {
 	outline: none !important;
+		text-decoration: none;
 }
 
 a:hover {
 	text-decoration: none;
-  color: #6675df;
+  color: #337AB7;
 }
 
 /*---------------------------------------------*/
@@ -169,6 +171,20 @@ iframe {
   font-size: 13px;
   line-height: 1.4;
   color: #999999;
+}
+
+.txt3 {
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #999999;
+}
+
+.txt4 {
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #0984E3;
 }
 
 
@@ -475,10 +491,10 @@ input.input100 {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  width: 100%;
+  width: 60%;
   height: 50px;
-  border-radius: 10px;
-  background: #6675df;
+  border-radius: 100px;
+  background: #0984E3;
   font-size: 15px;
   color: #fff;
   line-height: 1.2;
@@ -492,7 +508,7 @@ input.input100 {
 }
 
 .login100-form-btn:hover {
-  background: #1a246b;
+  background: #337AB7;
 }
 
 .signup-form-btn{
