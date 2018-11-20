@@ -479,14 +479,12 @@ input.input100 {
   height: 50px;
   border-radius: 10px;
   background: #6675df;
-
-  font-family: "Karla", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   color: #fff;
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 1px;
-
+  margin-bottom: 10px;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -494,10 +492,16 @@ input.input100 {
 }
 
 .login100-form-btn:hover {
-  background: #333333;
+  background: #1a246b;
 }
 
+.signup-form-btn{
+    background: #00b764;
+}
 
+.signup-form-btn:hover{
+    background: #0c8737;
+}
 
 /*------------------------------------------------------------------
 [ Responsive ]*/
