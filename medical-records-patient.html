@@ -66,8 +66,8 @@
             <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
               <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
                 <div class="d-table m-auto">
-                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/shards-dashboards-logo.svg" alt="Shards Dashboard">
-                  <span class="d-none d-md-inline ml-1">Shards Dashboard</span>
+                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/shards-dashboards-logo.svg" alt="Spaghetti Blockchain">
+                  <span class="d-none d-md-inline ml-1">Spaghetti.</span>
                 </div>
               </a>
               <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
@@ -87,45 +87,21 @@
           <div class="nav-wrapper">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link " href="dashboard.html">
-                  <i class="material-icons">edit</i>
-                  <span>Blog Dashboard</span>
+                <a class="nav-link" href="dashboard-patient.html">
+                  <i class="material-icons">dashboard</i>
+                  <span>Dashboard</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="components-blog-posts.html">
-                  <i class="material-icons">vertical_split</i>
-                  <span>Blog Posts</span>
+                <a class="nav-link active" href="medical-records-patient.html">
+                  <i class="material-icons">description</i>
+                  <span>Medical Records</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="add-new-record.html">
-                  <i class="material-icons">note_add</i>
-                  <span>Add New Record</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="form-components.html">
-                  <i class="material-icons">view_module</i>
-                  <span>Forms &amp; Components</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="tables.html">
-                  <i class="material-icons">table_chart</i>
-                  <span>Tables</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="user-profile-lite.html">
-                  <i class="material-icons">person</i>
-                  <span>User Profile</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="errors.html">
-                  <i class="material-icons">error</i>
-                  <span>Errors</span>
+                <a class="nav-link " href="approval-patient.html">
+                  <i class="material-icons">check_box</i>
+                  <span>Approval</span>
                 </a>
               </li>
             </ul>
@@ -161,21 +137,21 @@
                         </div>
                       </div>
                       <div class="notification__content">
-                        <span class="notification__category">Analytics</span>
-                        <p>Your website’s active users count increased by
-                          <span class="text-success text-semibold">28%</span> in the last week. Great job!</p>
+                        <span class="notification__category">Health</span>
+                        <p>Your average weight decreased by
+                          <span class="text-danger text-semibold">3.8%</span> in the last week. Be careful!</p>
                       </div>
                     </a>
                     <a class="dropdown-item" href="#">
                       <div class="notification__icon-wrapper">
                         <div class="notification__icon">
-                          <i class="material-icons">&#xE8D1;</i>
+                          <i class="material-icons">&#xe32a;</i>
                         </div>
                       </div>
                       <div class="notification__content">
-                        <span class="notification__category">Sales</span>
-                        <p>Last week your store’s sales count decreased by
-                          <span class="text-danger text-semibold">5.52%</span>. It could have been worse!</p>
+                        <span class="notification__category">Approval</span>
+                        <p>Dr. James Johnson requested to view your medical records on
+                          <span class="text-danger text-semibold">27 August</span>. </p>
                       </div>
                     </a>
                     <a class="dropdown-item notification__all text-center" href="#"> View all Notifications </a>
@@ -183,18 +159,16 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img class="user-avatar rounded-circle mr-2" src="images/avatars/0.jpg" alt="User Avatar">
-                    <span class="d-none d-md-inline-block">Sierra Brooks</span>
+                    <img class="user-avatar rounded-circle mr-2" src="images/user-2.jpg" alt="User Avatar">
+                    <span class="d-none d-md-inline-block">Terry Kwan</span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-small">
-                    <a class="dropdown-item" href="user-profile-lite.html">
+                    <a class="dropdown-item" href="profile-patient.html">
                       <i class="material-icons">&#xE7FD;</i> Profile</a>
-                    <a class="dropdown-item" href="components-blog-posts.html">
-                      <i class="material-icons">vertical_split</i> Blog Posts</a>
-                    <a class="dropdown-item" href="add-new-post.html">
-                      <i class="material-icons">note_add</i> Add New Post</a>
+                    <a class="dropdown-item" href="#">
+                      <i class="material-icons">build</i> Settings</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item text-danger" href="#">
+                    <a class="dropdown-item text-danger" href="index.html">
                       <i class="material-icons text-danger">&#xE879;</i> Logout </a>
                   </div>
                 </li>
@@ -211,8 +185,8 @@
             <!-- Page Header -->
             <div class="page-header row no-gutters py-4">
               <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-                <span class="text-uppercase page-subtitle">Components</span>
-                <h3 class="page-title">Blog Posts</h3>
+                <span class="text-uppercase page-subtitle">Overview</span>
+                <h3 class="page-title">Medical Records</h3>
               </div>
             </div>
             <!-- End Page Header -->
@@ -220,35 +194,29 @@
             <div class="row">
               <div class="col-lg-6 col-sm-12 mb-4">
                 <div class="card card-small card-post card-post--aside card-post--1">
-                  <div class="card-post__image" style="background-image: url('images/content-management/5.jpeg');">
-                    <a href="#" class="card-post__category badge badge-pill badge-info">Travel</a>
-                    <div class="card-post__author d-flex">
-                      <a href="#" class="card-post__author-avatar card-post__author-avatar--small" style="background-image: url('images/avatars/0.jpg');">Written by Anna Ken</a>
-                    </div>
+                  <div class="card-post__image" style="background-image: url('images/content-management/17.jpg');">
+                    <a href="#" class="card-post__category badge badge-pill badge-warning">X-Ray</a>
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">
                       <a class="text-fiord-blue" href="#">Attention he extremity unwilling on otherwise cars backwards yet</a>
                     </h5>
                     <p class="card-text d-inline-block mb-3">Conviction up partiality as delightful is discovered. Yet jennings resolved disposed exertion you off. Left did fond drew fat head poor jet pan flying over...</p>
-                    <span class="text-muted">29 February 2019</span>
+                    <span class="text-muted">22 February 2018</span>
                   </div>
                 </div>
               </div>
               <div class="col-lg-6 col-sm-12 mb-4">
                 <div class="card card-small card-post card-post--aside card-post--1">
-                  <div class="card-post__image" style="background-image: url('images/content-management/6.jpeg');">
-                    <a href="#" class="card-post__category badge badge-pill badge-dark">Business</a>
-                    <div class="card-post__author d-flex">
-                      <a href="#" class="card-post__author-avatar card-post__author-avatar--small" style="background-image: url('images/avatars/1.jpg');">Written by Jamie James</a>
-                    </div>
+                  <div class="card-post__image" style="background-image: url('images/content-management/18.jpg');">
+                    <a href="#" class="card-post__category badge badge-pill badge-dark">Lab Result</a>
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">
                       <a class="text-fiord-blue" href="#">Totally words widow one downs few age every seven if miss part by fact</a>
                     </h5>
                     <p class="card-text d-inline-block mb-3">Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education to admitted speaking...</p>
-                    <span class="text-muted">29 February 2019</span>
+                    <span class="text-muted">21 February 2018</span>
                   </div>
                 </div>
               </div>
@@ -264,8 +232,8 @@
                     <div class="card-post__author d-flex">
                       <a href="#" class="card-post__author-avatar card-post__author-avatar--small" style="background-image: url('images/avatars/1.jpg');">Written by James Khan</a>
                       <div class="d-flex flex-column justify-content-center ml-3">
-                        <span class="card-post__author-name">James Khan</span>
-                        <small class="text-muted">21 March 2011</small>
+                        <span class="card-post__author-name">Dr. James Johnson</span>
+                        <small class="text-muted">21 March 2018</small>
                       </div>
                     </div>
                     <div class="my-auto ml-auto">
@@ -275,7 +243,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4" onclick="window.location.href=#">
                 <div class="card card-small card-post mb-4">
                   <div class="card-body">
                     <h5 class="card-title">Husbands ask repeated resolved but laughter debating</h5>
@@ -322,32 +290,30 @@
           <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
             <ul class="nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" target="_blank" rel="noopener noreferrer" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" target="_blank" rel="noopener noreferrer" href="service.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" target="_blank" rel="noopener noreferrer" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" target="_blank" rel="noopener noreferrer" href="contact.html">Contact</a>
               </li>
             </ul>
             <span class="copyright ml-auto my-auto mr-2">Copyright © 2018
-              <a href="https://designrevision.com" rel="nofollow">DesignRevision</a>
+              <a href="index.html" rel="nofollow">Spaghetti Blockchain</a>
             </span>
           </footer>
         </main>
       </div>
     </div>
     <div class="promo-popup animated">
-      <a href="http://bit.ly/shards-dashboard-pro" class="pp-cta extra-action">
-        <img src="https://dgc2qnsehk7ta.cloudfront.net/uploads/sd-blog-promo-2.jpg"> </a>
-      <div class="pp-intro-bar"> Need More Templates?
+      <a href="index.html" class="pp-cta extra-action">
+        <img src="https://dgc2qnsehk7ta.cloudfront.net/uploads/sd-blog-promo-2.jpg">
+      </a>
+      <div class="pp-intro-bar"> Privacy Statement
         <span class="close">
           <i class="material-icons">close</i>
         </span>
@@ -356,9 +322,9 @@
         </span>
       </div>
       <div class="pp-inner-content">
-        <h2>Shards Dashboard Pro</h2>
-        <p>A premium & modern Bootstrap 4 admin dashboard template pack.</p>
-        <a class="pp-cta extra-action" href="http://bit.ly/shards-dashboard-pro">Download</a>
+        <h2>Speghetti Blockchain</h2>
+        <p>By using this website, you agree to our Privacy Statement.</p>
+        <a class="pp-cta extra-action" href="#">OK</a>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
