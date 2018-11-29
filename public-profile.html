@@ -7,7 +7,7 @@
     <meta name="description" content="Spaghetti Blockchain provides innovative digital healthcare blockchain solutions and manage clinical trials data." />
     <meta name="keywords" content="Spaghetti Blockchain CityU Hong Kong CS3382 Medical Record Platform" />
 
-    <title>Dashboard - Spaghetti Blockchain</title>
+    <title>Profile - Spaghetti Blockchain</title>
 
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -49,7 +49,7 @@
             <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
               <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
                 <div class="d-table m-auto">
-                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/icons/logo.jpg" alt="Shards Dashboard">
+                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/icons/logo.jpg" alt="Spaghetti Blockchain">
                   <span class="d-none d-md-inline ml-1">Spaghetti.</span>
                 </div>
               </a>
@@ -70,7 +70,7 @@
           <div class="nav-wrapper">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="public-dashboard.html">
+                <a class="nav-link" href="public-dashboard.html">
                   <i class="material-icons">dashboard</i>
                   <span>Patients</span>
                 </a>
@@ -162,91 +162,91 @@
             <!-- Page Header -->
             <div class="page-header row no-gutters py-4">
               <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-                <span class="text-uppercase page-subtitle">Dashboard</span>
-                <h3 class="page-title">Patients List</h3>
+                <span class="text-uppercase page-subtitle">Overview</span>
+                <h3 class="page-title">User Profile</h3>
               </div>
             </div>
             <!-- End Page Header -->
-            <!-- Small Stats Blocks -->
+            <!-- Default Light Table -->
             <div class="row">
-              <!-- Discussions Component -->
-              <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
-                <div class="card card-small blog-comments">
-                  <div class="card-header border-bottom">
-                    <h6 class="m-0">In-Patients</h6>
+              <div class="col-lg-4">
+                <div class="card card-small mb-4 pt-3">
+                  <div class="card-header border-bottom text-center">
+                    <div class="mb-3 mx-auto">
+                      <img class="rounded-circle" src="images/avatars/1.jpg" alt="User Avatar" width="110"> </div>
+                    <h4 class="mb-0">Dr. James J.</h4>
+                    <span class="text-muted d-block mb-2">Medical Doctor</span>
+                    <button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2">
+                      <i class="material-icons mr-1">edit</i>Edit</button>
                   </div>
-                  <div class="card-body p-0">
-                    <div class="blog-comments__item d-flex p-3">
-                      <div class="blog-comments__avatar mr-3">
-                        <img src="images/avatars/1.jpg" alt="User avatar" /> </div>
-                      <div class="blog-comments__content">
-                        <div class="blog-comments__meta text-muted">
-                          <a class="text-secondary" href="#">Terry Kwan</a>
-                          <span class="text-muted">– 27 August 2018</span>
-                        </div>
-                        <p class="m-0 my-1 mb-2 text-muted">Request medical records for medical clinic follow up.</p>
-                        <div class="blog-comments__actions">
-                          <div class="btn-group btn-group-sm">
-                            <button type="button" class="btn btn-white">
-                                <span class="text-success">
-                                  <i class="material-icons">check</i>
-                                </span> Approve </button>
-                            <button type="button" class="btn btn-white">
-                                <span class="text-danger">
-                                  <i class="material-icons">clear</i>
-                                </span> Reject </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="blog-comments__item d-flex p-3">
-                      <div class="blog-comments__avatar mr-3">
-                        <img src="images/avatars/1.jpg" alt="User avatar" /> </div>
-                      <div class="blog-comments__content">
-                        <div class="blog-comments__meta text-muted">
-                          <a class="text-secondary" href="#">Kelly Fox</a>
-                          <span class="text-muted">– 15 July 2018</span>
-                        </div>
-                        <p class="m-0 my-1 mb-2 text-muted">Request medical records for ward follow up.</p>
-                        <div class="blog-comments__actions">
-                          <div class="btn-group btn-group-sm">
-                            <button type="button" class="btn btn-success" disabled>
-                                <span class="text-white">
-                                  <i class="material-icons">check</i>
-                                </span> Approved
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="blog-comments__item d-flex p-3">
-                      <div class="blog-comments__avatar mr-3">
-                        <img src="images/avatars/1.jpg" alt="User avatar" /> </div>
-                      <div class="blog-comments__content">
-                        <div class="blog-comments__meta text-muted">
-                          <a class="text-secondary" href="#">Andy Lau</a>
-                          <span class="text-muted">– 13 April 2018</span>
-                        </div>
-                        <p class="m-0 my-1 mb-2 text-muted">Request medical records for medical clinic follow up.</p>
-                        <div class="blog-comments__actions">
-                          <div class="btn-group btn-group-sm">
-                            <button type="button" class="btn btn-success" disabled>
-                                <span class="text-white">
-                                  <i class="material-icons">check</i>
-                                </span> Approved
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer border-top">
-
-                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item p-4">
+                      <strong class="text-muted d-block mb-2">Description</strong>
+                      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <!-- End Discussions Component -->
+              <div class="col-lg-8">
+                <div class="card card-small mb-4">
+                  <div class="card-header border-bottom">
+                    <h6 class="m-0">Account Details</h6>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item p-3">
+                      <div class="row">
+                        <div class="col">
+                          <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="feFirstName">First Name</label>
+                                <input type="text" class="form-control" id="feFirstName" placeholder="First Name" value="James"> </div>
+                              <div class="form-group col-md-6">
+                                <label for="feLastName">Last Name</label>
+                                <input type="text" class="form-control" id="feLastName" placeholder="Last Name" value="Johnson"> </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="feEmailAddress">Email</label>
+                                <input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="jamesk@google.com"> </div>
+                              <div class="form-group col-md-6">
+                                <label for="fePassword">Password</label>
+                                <input type="password" class="form-control" id="fePassword" placeholder="Password" value="123456"> </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="feInputAddress">Address</label>
+                              <input type="text" class="form-control" id="feInputAddress" placeholder="123 Main Street"> </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="feInputCity">City</label>
+                                <input type="text" class="form-control" id="feInputCity"> </div>
+                              <div class="form-group col-md-4">
+                                <label for="feInputState">State</label>
+                                <select id="feInputState" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>...</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip"> </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-12">
+                                <label>Description</label>
+                                <textarea class="form-control" name="feDescription" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?</textarea>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-accent">Update Account</button>
+                          </form>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            <!-- End Default Light Table -->
           </div>
           <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
             <ul class="nav">
@@ -264,7 +264,7 @@
               </li>
             </ul>
             <span class="copyright ml-auto my-auto mr-2">Copyright © 2018
-              <a href="index.html" target="_blank" rel="noopener noreferrer">Spagehetti Blockchain</a>
+              <a href="index.html" rel="nofollow">Spaghetti Blockchain</a>
             </span>
           </footer>
         </main>
@@ -296,6 +296,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
     <script src="js/extras.1.1.0.min.js"></script>
     <script src="js/shards-dashboards.1.1.0.min.js"></script>
-    <script src="js/app/app-blog-overview.1.1.0.js"></script>
   </body>
 </html>
