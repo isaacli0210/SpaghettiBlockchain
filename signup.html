@@ -39,92 +39,6 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-<style type="text/css">
-
-
-	.form-div {
-        background: #f3f3f3;
-        padding: 50px 30px;
-        text-align: center;
-	}
-
-    .member-form{
-        min-width: 350px;
-        min-height: 400px;
-		margin: 30px 30px;
-		padding: 30px;
-		color: #999;
-		border-radius: 3px;
-    	margin-bottom: 15px;
-        background: #fff;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    .member-form .btn {
-        font-size: 16px;
-        font-weight: bold;
-        color: white;
-        border: none;
-        min-width: 140px;
-    }
-
-    .member-form img{
-        width: 60px;
-    }
-
-    .member-form .content {
-        font-size: 120%;
-        color: #2b2b2b;
-        margin: 5px;
-    }
-
-     .form-div .member-form:nth-child(1) .btn {
-        background: #fd7975;
-    }
-
-    .form-div .member-form:nth-child(2) .btn {
-        background: #19aa8d;
-    }
-
-     .form-div .member-form:nth-child(3) .btn {
-        background: #0984e3;
-    }
-
-     .member-form .btn:focus, .member-form .btn:hover{
-        opacity: 0.5;
-    }
-
-    .member-form h1 {
-		color: #333;
-		font-weight: bold;
-        margin-top: 0;
-    }
-
-    @media only screen and (max-width: 600px) {
-         .member-form{
-            min-width: 90%;
-            min-height: 300px;
-            margin: 5%;
-            padding: 30px;
-            color: #999;
-            border-radius: 3px;
-            margin-bottom: 15px;
-            background: #fff;
-            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .member-form h1{
-            font-size: 180%;
-        }
-    }
-
-</style>
 </head>
 <body>
 <div id="page">
@@ -157,20 +71,41 @@
     <div class="member-form">
         <h1>Doctor</h1>
         <img src="images/signup_doctor.svg">
-        <div class="content">Medical</div>
-        <button class="btn">Register</button>
+        <div class="content">Medical organizations that aims to obtain and share patients data with proper authorization</div>
+        <ul>
+            <li>Access patient data</li>
+            <li>Add medical record</li>
+            <li>View statistics</li>
+        </ul>
+        <div class="price-header">$50</div>
+        <div class="price-description">5 Users / Year</div>
+        <button class="btn" onclick="window.location.href='contact.html'">Contact Us</button>
     </div>
     <div class="member-form">
         <h1>Patient</h1>
         <img src="images/signup_users.svg"/>
-        <div class="content">Medical</div>
-        <button class="btn">Register</button>
+        <div class="content">Medical organizations that aims to obtain and share patients data with proper authorization</div>
+        <ul>
+            <li>Access personal data</li>
+            <li>Authorize third party organization</li>
+            <li>Receive feedback from doctor</li>
+        </ul>
+        <div class="price-header">FREE</div>
+        <div class="price-description">Lifelong License</div>
+        <button class="btn" onclick="window.location.href='signup-patient.html'">Register</button>
     </div>
     <div class="member-form">
         <h1>Business</h1>
         <img src="images/signup_businessman.svg">
-        <div class="content">Any organizations are welcome to join the </div>
-        <button class="btn">Register</button>
+        <div class="content">Healthcare provider can obtain data from patients with their authorization</div>
+        <ul>
+            <li>Business company (Insurance)</li>
+            <li>Medicine Industry</li>
+            <li>Rehabilitation</li>
+        </ul>
+        <div class="price-header">$100</div>
+        <div class="price-description">Yearly Subscription</div>
+        <button class="btn" onclick="window.location.href='contact.html'">Contact Us</button>
     </div>
 </div>
 
