@@ -1,0 +1,335 @@
+<!doctype html>
+<html class="no-js h-100" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spaghetti Blockchain provides innovative digital healthcare blockchain solutions and manage clinical trials data." />
+    <meta name="keywords" content="Spaghetti Blockchain CityU Hong Kong CS3382 Medical Record Platform" />
+
+    <title>Dashboard - Spaghetti Blockchain</title>
+
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="styles/shards-dashboards.1.1.0.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/extras.1.1.0.min.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+  </head>
+  <body class="h-100">
+    <div class="color-switcher animated">
+      <div class="actions mb-4">
+        <a class="mb-2 btn btn-sm btn-primary w-100 d-table mx-auto extra-action" href="#">
+          <i class="material-icons">visibility</i> High Contrast</a>
+        <a class="mb-2 btn btn-sm btn-white w-100 d-table mx-auto extra-action" href="#">
+          <i class="material-icons">font_download</i> Larger Font Size</a>
+      </div>
+      <div class="social-wrapper">
+        <div class="social-actions">
+          <h5 class="my-2"><a style="text-decoration:none;color:white;" href="#" >Need Help?</a></h5>
+        </div>
+        <div class="loading-overlay">
+          <div class="spinner"></div>
+        </div>
+      </div>
+      <div class="close">
+        <i class="material-icons">close</i>
+      </div>
+    </div>
+    <div class="color-switcher-toggle animated pulse infinite">
+      <i class="material-icons">settings</i>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Main Sidebar -->
+        <aside class="main-sidebar col-12 col-md-3 col-lg-2 px-0">
+          <div class="main-navbar">
+            <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
+              <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
+                <div class="d-table m-auto">
+                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/icons/logo.jpg" alt="Shards Dashboard">
+                  <span class="d-none d-md-inline ml-1">Spaghetti.</span>
+                </div>
+              </a>
+              <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
+                <i class="material-icons">&#xE5C4;</i>
+              </a>
+            </nav>
+          </div>
+          <form action="#" class="main-sidebar__search w-100 border-right d-sm-flex d-md-none d-lg-none">
+            <div class="input-group input-group-seamless ml-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+              <input class="navbar-search form-control" type="text" placeholder="Search for something..." aria-label="Search"> </div>
+          </form>
+          <div class="nav-wrapper">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link " href="private-request.html">
+                  <i class="material-icons">check_box</i>
+                  <span>Request</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- End Main Sidebar -->
+        <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+          <div class="main-navbar sticky-top bg-white">
+            <!-- Main Navbar -->
+            <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
+              <form action="#" class="main-navbar__search w-100 d-none d-md-flex d-lg-flex">
+                <div class="input-group input-group-seamless ml-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                  <input class="navbar-search form-control" type="text" placeholder="Search for something..." aria-label="Search"> </div>
+              </form>
+              <ul class="navbar-nav border-left flex-row ">
+                <li class="nav-item border-right dropdown notifications">
+                  <a class="nav-link nav-link-icon text-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="nav-link-icon__wrapper">
+                      <i class="material-icons">&#xE7F4;</i>
+                      <span class="badge badge-pill badge-danger">2</span>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-small" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="private-dashboard.html">
+                      <div class="notification__icon-wrapper">
+                        <div class="notification__icon">
+                          <i class="material-icons">&#xE6E1;</i>
+                        </div>
+                      </div>
+                      <div class="notification__content">
+                        <span class="notification__category">Health</span>
+                        <p>Your average weight decreased by
+                          <span class="text-danger text-semibold">3.8%</span> in the last week. Be careful!</p>
+                      </div>
+                    </a>
+                    <a class="dropdown-item" href="privaterequest.html">
+                      <div class="notification__icon-wrapper">
+                        <div class="notification__icon">
+                          <i class="material-icons">&#xe32a;</i>
+                        </div>
+                      </div>
+                      <div class="notification__content">
+                        <span class="notification__category">Approval</span>
+                        <p>Dr. James Johnson requested to view your medical records on
+                          <span class="text-danger text-semibold">27 August</span>. </p>
+                      </div>
+                    </a>
+                    <a class="dropdown-item notification__all text-center" href="#"> View all Notifications </a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="user-avatar rounded-circle mr-2" src="images/user-1.jpg" alt="User Avatar">
+                    <span class="d-none d-md-inline-block">Dr. Ian K.</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-small">
+                    <a class="dropdown-item" href="private-profile.html">
+                      <i class="material-icons">&#xE7FD;</i> Profile</a>
+                    <a class="dropdown-item" href="#">
+                      <i class="material-icons">build</i> Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-danger" href="index.html">
+                      <i class="material-icons text-danger">&#xE879;</i> Logout </a>
+                  </div>
+                </li>
+              </ul>
+              <nav class="nav">
+                <a href="#" class="nav-link nav-link-icon toggle-sidebar d-md-inline d-lg-none text-center border-left" data-toggle="collapse" data-target=".header-navbar" aria-expanded="false" aria-controls="header-navbar">
+                  <i class="material-icons">&#xE5D2;</i>
+                </a>
+              </nav>
+            </nav>
+          </div>
+          <!-- / .main-navbar -->
+          <div class="main-content-container container-fluid px-4">
+            <!-- Page Header -->
+            <div class="page-header row no-gutters py-4">
+              <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <span class="text-uppercase page-subtitle">Medical Records</span>
+                <h3 class="page-title">Terry Kwan</h3>
+              </div>
+            </div>
+            <!-- End Page Header -->
+            <div class="row mb-2">
+              <div class="col-12">
+                <span style="font-size: 16px;" class="d-block mb-2 text-muted">
+                  <strong>Categories</strong>
+                </span>
+              </div>
+              <div class="col mb-3">
+                <div class="bg-warning rounded text-white text-center p-3" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);">X-Ray</div>
+              </div>
+              <div class="col mb-3">
+                <div class="bg-info rounded text-white text-center p-3" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);">ECG</div>
+              </div>
+              <div class="col mb-3">
+                <div class="bg-success rounded text-white text-center p-3" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);">Summary</div>
+              </div>
+              <div class="col mb-3">
+                <div class="bg-primary rounded text-white text-center p-3" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);">CT Scan</div>
+              </div>
+              <div class="col mb-3">
+                <div class="bg-dark rounded text-white text-center p-3" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);">Lab Result</div>
+              </div>
+            </div>
+            <br/>
+            <div class="row">
+              <div class="col-lg col-md-6 col-sm-6 mb-5">
+                <div class="card card-small card-post card-post--aside card-post--1" style="cursor:pointer;" onclick="window.location.href='private-medical-records-detail.html'">
+                  <div class="card-post__image" style="background-image: url('images/content-management/17.jpg');">
+                    <a href="#" class="card-post__category badge badge-pill badge-warning">X-Ray</a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a class="text-fiord-blue" href="#">X-ray for chest </a>
+                    </h5>
+                    <p class="card-text d-inline-block mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
+                    <span class="text-muted">22 February 2018</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-6 col-sm-6 mb-5">
+                <div class="card card-small card-post card-post--aside card-post--1" style="cursor:pointer;" onclick="window.location.href='private-medical-records-detail.html'">
+                  <div class="card-post__image" style="background-image: url('images/content-management/18.jpg');">
+                    <a href="#" class="card-post__category badge badge-pill badge-dark">Lab Result</a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a class="text-fiord-blue" href="#">Lab Result</a>
+                    </h5>
+                    <p class="card-text d-inline-block mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
+                    <span class="text-muted">21 February 2018</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-6 col-sm-6 mb-5">
+                <div class="card card-small card-post card-post--aside card-post--1" style="cursor:pointer;" onclick="window.location.href='private-medical-records-detail.html'">
+                  <div class="card-post__image" style="background-image: url('images/content-management/19.jpg');">
+                    <a href="#" class="card-post__category badge badge-pill badge-primary">CT Scan</a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a class="text-fiord-blue" href="#">Whole Body Scan</a>
+                    </h5>
+                    <p class="card-text d-inline-block mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
+                    <span class="text-muted">21 February 2018</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card card-small card-post mb-4" style="cursor:pointer;" onclick="window.location.href='private-medical-records-detail.html'">
+                  <div class="card-body">
+                    <h5 class="card-title">Discharge Today</h5>
+                    <p class="card-text text-muted"> Everything are fine. The patient can discharge today. </p>
+                  </div>
+                  <div class="card-footer border-top d-flex">
+                    <div class="card-post__author d-flex">
+                      <a href="#" class="card-post__author-avatar card-post__author-avatar--small" style="background-image: url('images/avatars/1.jpg');">Written by James Khan</a>
+                      <div class="d-flex flex-column justify-content-center ml-3">
+                        <span class="card-post__author-name">Dr. James Johnson</span>
+                        <small class="text-muted">21 March 2018</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card card-small card-post mb-4" style="cursor:pointer;" onclick="window.location.href='private-medical-records-detail.html'">
+                  <div class="card-body">
+                    <h5 class="card-title">Reserve a CT scan and MRI scan.</h5>
+                    <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula...</p>
+                  </div>
+                  <div class="card-footer border-top d-flex">
+                    <div class="card-post__author d-flex">
+                      <a href="#" class="card-post__author-avatar card-post__author-avatar--small" style="background-image: url('images/avatars/2.jpg');"></a>
+                      <div class="d-flex flex-column justify-content-center ml-3">
+                        <span class="card-post__author-name">Dr. Ian Jones</span>
+                        <small class="text-muted">19 February 2018</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card card-small card-post mb-4" style="cursor:pointer;" onclick="window.location.href='private-medical-records-detail.html'">
+                  <div class="card-body">
+                    <h5 class="card-title">Admission today from A&E. Depression</h5>
+                    <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.Cum sociis natoque penatibus et magnis.</p>
+                  </div>
+                  <div class="card-footer border-top d-flex">
+                    <div class="card-post__author d-flex">
+                      <a href="#" class="card-post__author-avatar card-post__author-avatar--small" style="background-image: url('images/avatars/3.jpg');">Written by Anna Kunis</a>
+                      <div class="d-flex flex-column justify-content-center ml-3">
+                        <span class="card-post__author-name">Dr. Mark Jameson</span>
+                        <small class="text-muted">21 Nov 2017</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" rel="noopener noreferrer" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" rel="noopener noreferrer" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" rel="noopener noreferrer" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" rel="noopener noreferrer" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <span class="copyright ml-auto my-auto mr-2">Copyright © 2018
+              <a href="index.html" target="_blank" rel="noopener noreferrer">Spagehetti Blockchain</a>
+            </span>
+          </footer>
+        </main>
+      </div>
+    </div>
+    <div class="promo-popup animated">
+      <a href="index.html" class="pp-cta extra-action">
+        <img src="https://dgc2qnsehk7ta.cloudfront.net/uploads/sd-blog-promo-2.jpg">
+      </a>
+      <div class="pp-intro-bar"> Privacy Statement
+        <span class="close">
+          <i class="material-icons">close</i>
+        </span>
+        <span class="up">
+          <i class="material-icons">keyboard_arrow_up</i>
+        </span>
+      </div>
+      <div class="pp-inner-content">
+        <h2>Speghetti Blockchain</h2>
+        <p>By using this website, you agree to our Privacy Statement.</p>
+        <a class="pp-cta extra-action" href="#">OK</a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
+    <script src="js/extras.1.1.0.min.js"></script>
+    <script src="js/shards-dashboards.1.1.0.min.js"></script>
+    <script src="js/app/app-blog-overview.1.1.0.js"></script>
+  </body>
+</html>
