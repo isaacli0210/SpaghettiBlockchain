@@ -1,13 +1,13 @@
 <!doctype html>
 <html class="no-js h-100" lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Spaghetti Blockchain provides innovative digital healthcare blockchain solutions and manage clinical trials data." />
     <meta name="keywords" content="Spaghetti Blockchain CityU Hong Kong CS3382 Medical Record Platform" />
 
-    <title>Profile - Spaghetti Blockchain</title>
+    <title>Dashboard - Spaghetti Blockchain</title>
 
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,6 +17,86 @@
     <link rel="stylesheet" href="styles/extras.1.1.0.min.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.6/quill.snow.css">
+    <style>
+      .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 60px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+    </style>
+
   </head>
   <body class="h-100">
     <div class="color-switcher animated">
@@ -49,7 +129,7 @@
             <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
               <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
                 <div class="d-table m-auto">
-                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/icons/logo.jpg" alt="Spaghetti Blockchain">
+                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/icons/logo.jpg" alt="Shards Dashboard">
                   <span class="d-none d-md-inline ml-1">Spaghetti.</span>
                 </div>
               </a>
@@ -70,7 +150,7 @@
           <div class="nav-wrapper">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="public-dashboard.html">
+                <a class="nav-link " href="public-dashboard.html">
                   <i class="material-icons">dashboard</i>
                   <span>Patients</span>
                 </a>
@@ -107,7 +187,7 @@
                     </div>
                   </a>
                   <div class="dropdown-menu dropdown-menu-small" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="patient-dashboard.html">
+                    <a class="dropdown-item" href="public-dashboard.html">
                       <div class="notification__icon-wrapper">
                         <div class="notification__icon">
                           <i class="material-icons">&#xE6E1;</i>
@@ -119,7 +199,7 @@
                           <span class="text-danger text-semibold">3.8%</span> in the last week. Be careful!</p>
                       </div>
                     </a>
-                    <a class="dropdown-item" href="patient-approval.html">
+                    <a class="dropdown-item" href="public-request.html">
                       <div class="notification__icon-wrapper">
                         <div class="notification__icon">
                           <i class="material-icons">&#xe32a;</i>
@@ -162,91 +242,52 @@
             <!-- Page Header -->
             <div class="page-header row no-gutters py-4">
               <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-                <span class="text-uppercase page-subtitle">Overview</span>
-                <h3 class="page-title">User Profile</h3>
+                <span class="text-uppercase page-subtitle">22 February 2018</span>
+                <h3 class="page-title">X-Ray for Chest</h3>
               </div>
             </div>
             <!-- End Page Header -->
-            <!-- Default Light Table -->
+
+            <br/>
             <div class="row">
-              <div class="col-lg-4">
-                <div class="card card-small mb-4 pt-3">
-                  <div class="card-header border-bottom text-center">
-                    <div class="mb-3 mx-auto">
-                      <img class="rounded-circle" src="images/avatars/1.jpg" alt="User Avatar" width="110"> </div>
-                    <h4 class="mb-0">Dr. James J.</h4>
-                    <span class="text-muted d-block mb-2">Medical Doctor</span>
-                    <button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2">
-                      <i class="material-icons mr-1">edit</i>Edit</button>
+              <div class="col-lg col-md-6 col-sm-6 mb-5">
+                <div class="card card-small card-post card-post--aside card-post--1" >
+                  <div class="card-post__image" id="myImg" style="background-image: url('images/content-management/17.jpg'); cursor:pointer;">
+                    <a href="#" class="card-post__category badge badge-pill badge-warning">X-Ray</a>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item p-4">
-                      <strong class="text-muted d-block mb-2">Description</strong>
-                      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="card card-small mb-4">
-                  <div class="card-header border-bottom">
-                    <h6 class="m-0">Account Details</h6>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a class="text-fiord-blue" href="#">Dr. James J.</a>
+                    </h5>
+                    <p class="card-text d-inline-block mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
+                    <br/>
+                    <span class="text-muted">22 February 2018</span>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item p-3">
-                      <div class="row">
-                        <div class="col">
-                          <form>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="feFirstName">First Name</label>
-                                <input type="text" class="form-control" id="feFirstName" placeholder="First Name" value="James"> </div>
-                              <div class="form-group col-md-6">
-                                <label for="feLastName">Last Name</label>
-                                <input type="text" class="form-control" id="feLastName" placeholder="Last Name" value="Johnson"> </div>
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="feEmailAddress">Email</label>
-                                <input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="jamesk@google.com"> </div>
-                              <div class="form-group col-md-6">
-                                <label for="fePassword">Password</label>
-                                <input type="password" class="form-control" id="fePassword" placeholder="Password" value="123456"> </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="feInputAddress">Address</label>
-                              <input type="text" class="form-control" id="feInputAddress" placeholder="123 Main Street"> </div>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="feInputCity">City</label>
-                                <input type="text" class="form-control" id="feInputCity"> </div>
-                              <div class="form-group col-md-4">
-                                <label for="feInputState">State</label>
-                                <select id="feInputState" class="form-control">
-                                  <option selected>Choose...</option>
-                                  <option>...</option>
-                                </select>
-                              </div>
-                              <div class="form-group col-md-2">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip"> </div>
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group col-md-12">
-                                <label>Description</label>
-                                <textarea class="form-control" name="feDescription" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?</textarea>
-                              </div>
-                            </div>
-                            <button type="submit" class="btn btn-accent">Update Account</button>
-                          </form>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
-            <!-- End Default Light Table -->
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <!-- Add New Post Form -->
+                <div class="card card-small mb-3">
+                  <div class="card-body">
+                    <form class="add-new-post">
+                      <input class="form-control form-control-lg mb-3" type="text" placeholder="Comment Title">
+                      <div id="editor-container" class="add-new-post__editor mb-1"></div>
+                    </form>
+                  </div>
+                </div>
+                <!-- / Add New Post Form -->
+              </div>
+            </div>
+          </div>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+
           </div>
           <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
             <ul class="nav">
@@ -264,7 +305,7 @@
               </li>
             </ul>
             <span class="copyright ml-auto my-auto mr-2">Copyright © 2018
-              <a href="index.html" rel="nofollow">Spaghetti Blockchain</a>
+              <a href="index.html" target="_blank" rel="noopener noreferrer">Spagehetti Blockchain</a>
             </span>
           </footer>
         </main>
@@ -296,5 +337,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
     <script src="js/extras.1.1.0.min.js"></script>
     <script src="js/shards-dashboards.1.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.6/quill.min.js"></script>
+    <script src="js/app/app-blog-new-post.1.1.0.js"></script>
+    <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = 'images/content-management/17.jpg';
+    captionText.innerHTML = 'X-ray for Chest';
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[1];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
   </body>
 </html>
