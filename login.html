@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title>Login - Spaghetti Blockchain</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Spaghetti Blockchain provides innovative digital healthcare blockchain solutions and manage clinical trials data." />
@@ -44,7 +44,7 @@
 					
 					
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email">
+						<input id="login-email" class="input100" type="text" name="email">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Email</span>
 					</div>
@@ -72,7 +72,7 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" onclick="window.location.href='patient-dashboard.html'">
+						<button class="login100-form-btn" onclick="login()">
 								Login
 						</button>
 					</div>

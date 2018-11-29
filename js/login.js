@@ -65,6 +65,19 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
+
     
 
 })(jQuery);
+
+function login() {
+    var loginID = document.getElementById("login-email").value;
+    console.log(loginID);
+    if(loginID === "patient") {
+        window.location.href="patient-profile.html";
+    } else if (loginID === "public") {
+        window.location.href="public-dashboard.html";
+    } else if (loginID === "private") {
+        window.location.href="private-dashboard.html";
+    }
+}
