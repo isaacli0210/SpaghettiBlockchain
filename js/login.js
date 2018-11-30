@@ -78,6 +78,6 @@ function login() {
     } else if (loginID === "public") {
         window.location.href="public-dashboard.html";
     } else if (loginID === "private") {
-        window.location.href="private-dashboard.html";
+        window.location.href="private-request.html";
     }
 }
